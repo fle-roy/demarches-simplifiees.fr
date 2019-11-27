@@ -115,6 +115,8 @@ Rails.application.routes.draw do
   namespace :champs do
     get ':position/siret', to: 'siret#show', as: :siret
     get ':position/dossier_link', to: 'dossier_link#show', as: :dossier_link
+    get ':position/piece_justificative', to: 'piece_justificative#show', as: :piece_justificative
+    put ':position/piece_justificative', to: 'piece_justificative#update'
     post ':position/carte', to: 'carte#show', as: :carte
     post ':position/repetition', to: 'repetition#show', as: :repetition
   end

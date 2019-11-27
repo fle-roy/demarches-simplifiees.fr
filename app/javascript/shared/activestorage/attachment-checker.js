@@ -19,6 +19,10 @@ delegate('click', '[data-attachment-refresh]', event => {
   checker.check();
 });
 
+// Check the anti-virus state of a set of attachment URLs.
+//
+// Each time the given URL is requested, the attachments/show.js.erb view is rendered,
+// causing the anti-virus state to be refreshed.
 class AttachmentChecker {
   urls = new Set();
   timeout;

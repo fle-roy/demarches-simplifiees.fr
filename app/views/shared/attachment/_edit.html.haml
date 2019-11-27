@@ -26,4 +26,5 @@
     id: "attachment_file_#{attachment_id}",
     class: "attachment-input #{'hidden' if persisted}",
     accept: accept,
-    direct_upload: true
+    direct_upload: true,
+    data: { 'auto-upload': true, 'auto-attach-url': champs_piece_justificative_url(form.index) }

@@ -1,4 +1,4 @@
-.editable-champ{ class: "editable-champ-#{champ.type_champ}" }
+.editable-champ{class: "editable-champ-#{champ.type_champ}", data: { 'champ-id': champ.id } }
   - if champ.repetition?
     = render partial: 'shared/dossiers/editable_champs/header_section', locals: { champ: champ }
   - elsif has_label?(champ)
