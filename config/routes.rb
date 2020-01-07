@@ -367,6 +367,8 @@ Rails.application.routes.draw do
         member do
           post 'add_instructeur'
           delete 'remove_instructeur'
+          get 'reaffecter_dossiers'
+          post 'reaffecter'
         end
 
         collection do
